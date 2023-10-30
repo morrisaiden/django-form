@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+{#    <link rel="stylesheet" href="{% static 'website/aiden.css' %}">#}
+</head>
+<body>
+
+   <h1>Class Schedule</h1>
+
+   {% for topic in revision %}
+      <li>
+       {{ topic }}
+      </li>
+   {% endfor %}
+</body>
+</html>

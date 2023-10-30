@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{#{% load static %}#}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+{#    <link rel="stylesheet" href="a.css">#}
+{#    <link rel="stylesheet" href="{% static 'website/aiden.css' %}">#}
+
+</head>
+<body>
+<form action="" method="POST">
+    <table>
+        {{ form }}
+        {% csrf_token %}
+    </table>
+    <button type="submit">Submit</button>
+</form>
+
+
+</body>
+</html>
